@@ -5,24 +5,48 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Muaythai Kick Counter</title>
+    <title>Muaythai Kick Counter</title>
+    <link rel="icon" type="image/png" href="./img/image.png">
 
 </head>
 
 <body>
-    <link rel="stylesheet" href="clik counter.css">
-    <div class="container">
-        <h1 id="sceen">0</h1>
-        <p id="save-el">Tours: </p>
 
-        <div class="btn">
-            <button id="kick-btn" onclick="clickment()">Kick</button>
-            <button id="save-btn" onclick="save()">Save</button>
-            <div><button id="refresh-btn" onclick="handleClick()">Restart ⟳</button></div>
+    <link rel="stylesheet" href="clik counter.css">
+    <h1 id="title"> kick counter </h1>
+    <img src="img/aka-thailand.jpg" alt="gym" class="thaiGym">
+    <nav>
+
+        <video id="cameraFeed" autoplay playsinline></video>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+
+        <div class="mainBox">    
+            <button id="camera-btn" onclick="openCamera()">
+                <img src="img/appareil-photo.png" alt="camera-btn-logo" style="width:20px; height:20px;">
+            </button>
+            <h1 id="sceen">0</h1>
+            <p id="save-el">Tours: </p>
+                <div class="btn">
+                    <button id="kick-btn" onclick="clickment()">
+                        Kick
+                    </button>
+                    <button id ="save-btn" onclick="save()">
+                        <img src="img/diskette.png" alt="save-btn-logo" style="width:20px; height:20px; ">   Save
+                    </button>
+                    <button id="refresh-btn" onclick="handleClick()">Restart ⟳</button>
+                </div>
         </div>
+    </nav>
+    <div class="score">
+        <h1>Score</h1>
     </div>
 
+    <footer>
+        <p>Developed by Taha Belghiti – Junior Front-End Developer  Passionate about combat sports and technology.</p>
+        <h3>Built with HTML, CSS, and JavaScript.</h3>
+    </footer>
     <script src="clik counter.js"></script>
 </body>
 

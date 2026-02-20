@@ -1,65 +1,86 @@
 body {
-    background-image: url(aka-thailand.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
 
-    font-weight: 700;
-    font-family: Geneva, Tahoma, sans-serif;
-}
-
-.container {
-    background-color: rgba(72, 73, 72, 0.589);
-    border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2%;
-    margin-top: 10vh;
-    max-width: 20%;
-    max-height: 10%;
+    font-weight: 700;
+    background-color: #706F6F;
+    display: flex;
+    font-family: Geneva, Tahoma, sans-serif;
+    margin: 0;
+
+}
+
+#title{
+    font-family: 'Holtwood One SC', serif;
+    color: white;
+}
+
+
+.thaiGym {
+    width: 350px;
+    border-radius: 39px;
+}
+
+.mainBox {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    width: 300px;
+    background-color: #D9D9D9;
+    border-radius: 28px;
+    padding: 20px;
+}
+
+
+#cameraFeed {
+    height: 50px;
+    width: 100px;
+
+}
+
+
+.btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    place-items: center;
+    margin: 15px;
 }
 
 button {
-    border-radius: 10px;
+    border-radius: 30px;
     border-color: transparent;
-    height: 30px;
-    width: 70px;
-    color: aliceblue;
+
+    height: 60px;
+    width: 150px;
+    color: rgb(0, 0, 0);
+
+    background-color: #A62828;
     font-size: 16px;
-    font-weight: 700;
-}
-
-#kick-btn {
-    background-color: #414A37;
-}
-
-#kick-btn:hover {
-    background-color: #616e53;
+    font-weight: 1000;
 }
 
 #save-btn {
-    background-color: rgb(218, 42, 42);
-    margin-top: 5%;
-}
 
-#save-btn:hover {
-    background-color: rgb(235, 84, 84);
+    place-self: center;
+    text-align: center;
 }
 
 #sceen {
-    background-color: rgb(148, 141, 133);
-    border-style: solid;
-    border-color: rgb(58, 58, 58);
-    border-width: 2px;
-    border-radius: 10px;
-    height: 20%;
-    width: 100%;
+    background-color: #5C5B5B;
+    border-radius: 30px;
+    height: 100px;
+    width: 300px;
     display: flex;
+
+    color: #D9D9D9;
+    flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
     max-width: 100%;
@@ -67,28 +88,63 @@ button {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    overflow: auto;
+
 }
 
 #save-el {
     font-weight: 900;
-    background-color: rgb(201, 197, 192);
-    border-style: solid;
-    border-color: rgb(124, 119, 119);
-    border-width: 2px;
-    border-radius: 8px;
-    height: 20%;
-    width: 100%;
+    background-color: #868686;
+    border-radius: 30px;
+
+    height: 80px;
+    max-height: 100%;
+    max-width: 100%;    
+    width: 250px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    max-height: 40%;
-    max-width: 100%;
+    overflow-y: auto;
+    padding: 10px;
 
 }
 
 #refresh-btn {
     margin-top: 5%;
-    background-color: cadetblue;
     width: 100%;
+    grid-column: span 2 / span 2;
+
+}
+
+
+#camera-btn {
+    background-color: rgba(247, 87, 87, 0.966);
+
+}
+
+.score {
+
+    background-color: #CE5B5B;
+    width: 330px ;
+    height: 350px;
+    margin: 20px;
+    border-radius: 100px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer {
+    background-color: #525252;
+    height :150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding : 50px ;
+    padding-top: 0;
+    color: white;
 }
