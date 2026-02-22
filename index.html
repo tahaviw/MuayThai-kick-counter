@@ -15,12 +15,23 @@
 
     <link rel="stylesheet" href="clik counter.css">
     <h1 id="title"> kick counter </h1>
-    <img src="img/aka-thailand.jpg" alt="gym" class="thaiGym">
+    <div class="login">
+        <form method="get">
+            <h1>Login</h1>
+            <input type="text" placeholder="User Name" id="usrname" required>
+            <input type="password" placeholder="Pass Word" id="psw" required>
+            <input type="submit" id="go">
+        </form>
+        
+    </div>
     <nav>
 
         <video id="cameraFeed" autoplay playsinline></video>
         
         <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
         <div class="mainBox">    
             <button id="camera-btn" onclick="openCamera()">
@@ -44,7 +55,7 @@
     </div>
 
     <footer>
-        <p>Developed by Taha Belghiti – Junior Front-End Developer  Passionate about combat sports and technology.</p>
+        <p>Developed by Taha Belghiti – Junior Front-End Developer Passionate about combat sports and technology.</p>
         <h3>Built with HTML, CSS, and JavaScript.</h3>
     </footer>
     <script src="clik counter.js"></script>
