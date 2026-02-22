@@ -12,17 +12,25 @@
 </head>
 
 <body>
+    
+        <link rel="stylesheet" href="clik counter.css">
+        <h1 id="title"> kick counter </h1>
+    <div class="hero">
+            <div class="login">
+                <form method="get">
+                    <h1>Login</h1>
+                    <input type="text" placeholder="User Name" id="usrname" required>
+                    <input type="password" placeholder="Pass Word" id="psw" required>
+                    <input type="submit" id="go">
+                </form>
+                
+            </div>
 
-    <link rel="stylesheet" href="clik counter.css">
-    <h1 id="title"> kick counter </h1>
-    <div class="login">
-        <form method="get">
-            <h1>Login</h1>
-            <input type="text" placeholder="User Name" id="usrname" required>
-            <input type="password" placeholder="Pass Word" id="psw" required>
-            <input type="submit" id="go">
-        </form>
-        
+        <div class="desktop-txt">
+            <h2>Train smarter. Kick harder. Improve faster.</h2>
+            <p>AI Kick Counter is a smart training web app that uses artificial intelligence to detect and count your kicks in real time. Whether you're working on speed, power, or endurance, this app tracks your movement automatically — so you can focus 100% on your technique.
+                Using advanced motion tracking, the system analyzes your body movement through your camera and accurately counts every clean kick. No manual input. No distractions. Just pure training.</p>
+        </div>
     </div>
     <nav>
 
@@ -32,12 +40,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-
+    </nav>
+    <main>
         <div class="mainBox">    
             <button id="camera-btn" onclick="openCamera()">
                 <img src="img/appareil-photo.png" alt="camera-btn-logo" style="width:20px; height:20px;">
             </button>
-            <h1 id="sceen">0</h1>
+            <h1 id="Ecrant">0</h1>
             <p id="save-el">Tours: </p>
                 <div class="btn">
                     <button id="kick-btn" onclick="clickment()">
@@ -49,14 +58,15 @@
                     <button id="refresh-btn" onclick="handleClick()">Restart ⟳</button>
                 </div>
         </div>
-    </nav>
-    <div class="score">
+   
+    <div id="aside">
         <h1>Score</h1>
     </div>
-
+        
+     </main>
     <footer>
         <p>Developed by Taha Belghiti – Junior Front-End Developer Passionate about combat sports and technology.</p>
-        <h3>Built with HTML, CSS, and JavaScript.</h3>
+        <h3>Built with HTML, CSS, and JavaScript.<br>© 2026</h3>
     </footer>
     <script src="clik counter.js"></script>
 </body>

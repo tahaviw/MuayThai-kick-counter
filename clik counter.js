@@ -1,6 +1,5 @@
 let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("sceen")
-
+let countEl = document.getElementById("Ecrant")
 
 
 let count = 0
@@ -49,4 +48,3 @@ async function openCamera() {
     console.error(error);
   }
 }
-
