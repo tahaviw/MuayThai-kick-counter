@@ -4,6 +4,10 @@ A mobile-first training web app for tracking kick count across rounds during Mua
 
 ---
 
+## You can view the live demo of the project here: https://kick-count.netlify.app/
+
+---
+
 ## Features
 
 - **One-tap kick counting** — increment counter with a single button press
