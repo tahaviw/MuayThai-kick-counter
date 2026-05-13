@@ -20,14 +20,6 @@ function save() {
 
 }
 
-
-/*let name = "taha"
-let greeting = "Hi , my name is "
-
-let MyGreeting = greeting + name
-
-console.log(MyGreeting)*/
-
 const refreshBtn = document.getElementById("refresh-btn");
 
 function handleClick() {
