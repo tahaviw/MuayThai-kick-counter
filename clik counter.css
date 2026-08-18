@@ -340,10 +340,16 @@ footer p {
 }
 
 footer h3 {
+  width: 100%;
   font-size: 14px;
   font-weight: 800;
   opacity: 0.75;
   letter-spacing: 0.03em;
+}
+
+footer .copyright {
+  display: block;
+  text-align: center;
 }
 
 /* ── 8. Greeting modal ── */
@@ -510,5 +516,9 @@ footer h3 {
 
   footer p {
     max-width: none;
+  }
+
+  footer .copyright {
+    text-align: center;
   }
 }
