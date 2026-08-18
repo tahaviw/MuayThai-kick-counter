@@ -156,8 +156,8 @@ nav.show {
 }
 
 #cameraFeed {
-  width: 260px;
-  height: 180px;
+  width: min(320px, 90vw);
+  height: 200px;
   object-fit: cover;
   border-radius: 20px;
   background: #2c2c2c;
