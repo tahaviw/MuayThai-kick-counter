@@ -14,64 +14,87 @@
 </head>
 
 <body>
-    
-        <link rel="stylesheet" href="clik counter.css">
-        <h1 id="title"> kick counter </h1>
-    <div class="hero">
-            <div class="login">
-                <form method="get" id="login-form">
-                    <h1>Login</h1>
-                    <input type="text" placeholder="User Name" id="usrname" required>
-                    <input type="password" placeholder="Pass Word" id="psw" required>
-                    <input type="submit" id="go" value="Let's go">
-                </form>
-                
-            </div>
 
+    <div class="bg-glow"></div>
+
+    <link rel="stylesheet" href="clik counter.css">
+
+    <!-- Status bar -->
+    <header class="statusbar">
+        <span class="statusbar-logo">KICK&#8209;COUNTER</span>
+        <span class="statusbar-sub">// COMBAT TELEMETRY v2.0</span>
+    </header>
+
+    <h1 id="title">kick counter</h1>
+
+    <!-- Hero -->
+    <div class="hero">
         <div class="desktop-txt">
             <h2>Train smarter. Kick harder. Improve faster.</h2>
             <p>AI Kick Counter is a smart training web app that uses artificial intelligence to detect and count your kicks in real time. Whether you're working on speed, power, or endurance, this app tracks your movement automatically so you can focus 100% on your technique.
                 Using advanced motion tracking, the system analyzes your body movement through your camera and accurately counts every clean kick. No manual input. No distractions. Just pure training.</p>
         </div>
     </div>
+
+    <!-- Camera feed -->
     <nav>
-
         <video id="cameraFeed" autoplay playsinline></video>
-
     </nav>
+
+    <!-- Main -->
     <main>
-        <div class="mainBox">    
+        <div class="mainBox">
+            <span class="module-tag">// TRACKING MODULE</span>
             <button id="camera-btn" onclick="openCamera()">
                 <img src="img/appareil-photo.png" alt="camera-btn-logo" style="width:20px; height:20px;">
+                <span>Camera</span>
             </button>
             <h1 id="Ecrant">0</h1>
             <p id="save-el">Tours: </p>
-                <div class="btn">
-                    <button id="kick-btn" onclick="clickment()">
-                        Kick
-                    </button>
-                    <button id ="save-btn" onclick="save()">
-                        <img src="img/diskette.png" alt="save-btn-logo" style="width:20px; height:20px; ">   Save
-                    </button>
-                    <button id="refresh-btn" onclick="handleClick()">Restart ⟳</button>
-                </div>
+            <div class="btn">
+                <button id="kick-btn" onclick="clickment()">Kick</button>
+                <button id="save-btn" onclick="save()">
+                    <img src="img/diskette.png" alt="save-btn-logo" style="width:20px; height:20px;">
+                    Save
+                </button>
+                <button id="refresh-btn" onclick="handleClick()">Restart ⟳</button>
+            </div>
         </div>
-   
-    <div id="aside">
-        <h1>Score</h1>
-    </div>
-        
-     </main>
+
+        <div id="aside">
+            <h1>Score</h1>
+        </div>
+    </main>
+
     <footer>
         <p>Developed by Taha Belghiti Junior FullStack Dev Passionate about combat sports and technology.</p>
         <h3>Built with HTML, CSS, and JavaScript.<br><span class="copyright">© 2026</span></h3>
     </footer>
 
+    <!-- Login popup (opens once on start) -->
+    <div class="modal-overlay" id="login-modal" aria-hidden="false">
+        <div class="modal" role="dialog" aria-labelledby="login-title">
+            <button class="modal-close" id="login-close" aria-label="Close login">&times;</button>
+            <span class="module-tag">// IDENTIFICATION</span>
+            <div class="modal-icon">🥊</div>
+            <h2 class="modal-title" id="login-title">ACCESS</h2>
+            <p class="modal-text">Identify yourself to unlock the training module.</p>
+            <form id="login-form">
+                <input type="text" placeholder="User Name" id="usrname" autocomplete="username" required>
+                <input type="password" placeholder="Pass Word" id="psw" autocomplete="current-password" required>
+                <input type="submit" id="go" value="Let's go">
+            </form>
+            <button class="modal-btn skip" id="login-skip">Enter as guest →</button>
+        </div>
+    </div>
+
+    <!-- Greeting modal -->
     <div class="modal-overlay" id="greeting-modal" aria-hidden="true">
         <div class="modal" role="dialog" aria-labelledby="greeting-title">
             <button class="modal-close" id="modal-close" aria-label="Close greeting">&times;</button>
+            <span class="module-tag">// ACCESS GRANTED</span>
             <div class="modal-icon">🥊</div>
-            <h2 class="modal-title" id="greeting-title">Welcome!</h2> 
+            <h2 class="modal-title" id="greeting-title">Welcome!</h2>
             <p class="modal-text" id="greeting-text"></p>
             <button class="modal-btn" id="modal-btn">Let's train</button>
         </div>
