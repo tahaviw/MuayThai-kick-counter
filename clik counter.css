@@ -508,14 +508,20 @@ footer .copyright {
 
   footer {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: left;
     padding: 24px 48px;
+    gap: 10px;
   }
 
   footer p {
     max-width: none;
+    text-align: center;
+  }
+  
+  footer h3 {
+    text-align: center;
   }
 
   footer .copyright {
