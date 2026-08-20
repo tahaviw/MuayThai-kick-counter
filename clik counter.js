@@ -1,5 +1,6 @@
 let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("Ecrant")
+let asideEl = document.getElementById("aside")
 
 
 let count = 0
@@ -8,7 +9,9 @@ let savedRounds = []
 function clickment() {
     count += 1
     countEl.textContent = count
-
+    asideEl.querySelector("h1").textContent = count + " Kicks"
+    asideEl.style.boxShadow = "0 0 30px rgba(247, 87, 87, 0.5)"
+    setTimeout(() => asideEl.style.boxShadow = "", 200)
 }
 
 
@@ -17,7 +20,11 @@ function save() {
     saveEl.textContent = "Tours: " + savedRounds.join(" - ")
     count = 0
     countEl.innerText = 0
-
+    asideEl.querySelector("h1").textContent = "Score"
+    asideEl.style.background = "linear-gradient(160deg, rgba(247, 87, 87, 0.85), var(--red-deep))"
+    setTimeout(() => {
+        asideEl.style.background = ""
+    }, 300)
 }
 
 const refreshBtn = document.getElementById("refresh-btn");
@@ -27,6 +34,7 @@ function handleClick() {
     countEl.textContent = 0;
     savedRounds = [];
     saveEl.textContent = "Tours:";
+    asideEl.querySelector("h1").textContent = "Score"
 }
 
 // The same as onclick = "function()" on html
