@@ -1,6 +1,6 @@
 # Muay Thai Kick Counter
 
-A mobile-first training web app for tracking kick count across rounds during Muay Thai sessions. Built for fighters who need a fast, no-friction counter they can tap mid-round — with round history logged on-screen and a camera feed stub ready for future AI motion detection integration.
+A mobile-first training web app for tracking kick count across rounds during Muay Thai sessions. Built for fighters who need a fast, no-friction counter they can tap mid-round with round history logged on-screen and a camera feed stub ready for future AI motion detection integration.
 
 ---
 
@@ -108,7 +108,7 @@ index.html
 
 ## Roadmap
 
-- [ ] Fix `getElementById('camera')` → `'cameraFeed'`
+- [x] Fix `getElementById('camera')` → `'cameraFeed'`
 - [ ] Move `<link>` tags to `<head>`, remove duplicate markup
 - [ ] Add localStorage persistence for round history
 - [ ] Implement pose detection (MediaPipe or TensorFlow.js) for automated kick counting
@@ -118,5 +118,5 @@ index.html
 
 ## Author
 
-**Taha Belghiti** — Junior Front-End Developer  
+**Taha Belghiti** — Junior FullStack Developer  
 Built with HTML, CSS, and JavaScript · © 2026
